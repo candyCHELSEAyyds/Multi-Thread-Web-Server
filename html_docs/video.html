@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <link rel="icon" href="data:,"> 
+    <title>Video Player Page</title>
+    <style>
+        /* CSS to make the video responsive */
+        .responsive-video {
+            max-width: 100%; /* Ensures that the video is not larger than its container */
+            height: auto; /* Maintains the aspect ratio */
+        }
+    </style>
+</head> 
+<body> 
+    <h1>HELLO!</h1>
+    <p>This is a <b>video.html file</b> with a video focusing on Furina, a character in Genshin Impact.</p>
+    <p>Click the button to go back to the previous page.</p>
+    <button onclick="window.history.back();">Back</button>
+    <br>
+    COMP2322 Computer Networking<br>
+    Project: Multi-thread Web Server
+    <br>
+    <video id="videoPlayer" class="responsive-video" controls>
+        <source src="./filesystem/Furina-PV.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <br>
+    
+</body> 
+</html>

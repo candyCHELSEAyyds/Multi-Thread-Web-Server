@@ -1,0 +1,34 @@
+<html> 
+<head> 
+    <link rel="icon" href="data:,"> 
+    <title>Hello World</title> 
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #image {
+            width: 100%;   /* Adjusts the width to be 100% of the container (body) */
+            height: auto;  /* Adjusts the height automatically to maintain the aspect ratio */
+        }
+    </style>
+</head> 
+<body> 
+    <h1>HELLO!</h1>
+    <p>This is <b>a test file</b> with <b>a test image</b></p>
+    <p>Click the button to go back to the previous page.</p>
+    <button onclick="window.history.back();">Back</button>
+    <br>
+    COMP2322 Computer Networking<br>
+    Project: Multi-thread Web Server<br>
+    <img id="image" src="" alt="raiden-shogun.jpg">
+    <br>
+    
+</body> 
+<script>
+    window.onload = function() {
+        document.getElementById('image').src = './filesystem/raiden-shogun.jpg';
+    }
+</script>
+</html>

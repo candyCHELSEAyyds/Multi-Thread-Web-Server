@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <link rel="icon" href="data:,"> 
+    <title>Music Player</title>
+</head> 
+<body> 
+    <h1>Hi! Welcome to the Music Player</h1>
+    <p>Enjoy listening to these works of HOYO-MIX!</p>
+
+    <p>Click the button to go back to the previous page.</p>
+    <button onclick="window.history.back();">Back</button>
+    <br>
+    
+    <p><strong>HONKAI 3rd: Cyberangel</strong><br>
+    <audio controls onerror="logAudioError(event)">
+        <source src="./filesystem/Cyberangel.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio></p>
+
+
+    <p><strong>HONKAI 3rd: Moon-Halo</strong><br>
+    <audio controls onerror="logAudioError(event)">
+        <source src="./filesystem/Moon-Halo.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio></p>
+
+    <p><strong>HONKAI STAR RAIL: WHITE-NIGHT</strong><br>
+    <audio controls onerror="logAudioError(event)">
+        <source src="./filesystem/WHITE-NIGHT_Honkai-Star-Rail.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio></p>
+
+    <script>
+        function logAudioError(event) {
+            console.error("Error loading audio: ", event.target.src);
+        }
+    </script>
+    
+</body> 
+</html>
